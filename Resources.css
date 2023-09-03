@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.Resources{
+    margin-top: 20px;
+    margin-left: 400px; 
+    /* margin: auto; */
+    width: 380px;
+    height: 450px;
+    padding: 70px 0px 0px 70px;
+    box-shadow: 2px 2px 20px lightgray;
+}
+
+.Resources h3{
+    margin-bottom: 20px;
+    font-size: 23px;
+    color: #05024F;
+}
+
+.Resources a{
+    text-decoration: none;
+    padding-top: 20px;
+    color: #05024F;
+    /* display: block; */
+    font-size: 20px;
+}
+
+.Resources a:hover{
+    color: royalblue;
+    text-decoration: underline;
+}
+
+
+.Resources i{
+    margin-right: 20px;
+    margin-bottom: 40px;
+}

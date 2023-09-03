@@ -1,0 +1,1444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:375px) {
+    .menu-bar{
+        display: visible;
+    }
+}
+
+
+/* create a heading and 5 anchor tag and right side 2 anchor section part */
+.three-display-flex{
+    margin-top: 30px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heading h2{
+    position: absolute;    
+    top: 6%;
+    left: 5%;
+    font-size: 38px;
+}
+
+@media screen and (max-width: 375px) {
+    .heading h2{
+        margin-top: -30px;
+        font-size: 30px;
+        font-family: serif;
+        color: #001056;
+    }
+}
+
+.five-anchor{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.five-anchor a{
+    text-decoration: none;
+    color: black;
+    font-size: 17   px;
+    margin-left: 40px;
+    position: relative;
+    
+}
+
+.five-anchor a[name="create"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: royalblue;
+    transition: width 0.3s;
+}
+
+
+.five-anchor a[name="create"]:hover::after{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 375px) {
+    .five-anchor{
+        display: none;
+    }
+}
+
+
+
+.five-anchor :active:hover{
+    color: blue;
+}
+.right-side-anchor{
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .right-side-anchor{
+        display: none;
+    }
+}
+
+.right-side-anchor a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.five-anchor :hover{
+    color: blue;
+}
+
+.five-anchor a:hover{
+    color: blue;
+    transform: rotate(180deg);
+}
+
+.five-anchor i:hover{
+    transform: rotate(180deg);
+}
+
+.right-side-anchor .GetStarted{
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 12px 30px;
+}
+
+.right-side-anchor .GetStarted:hover{
+    border: 1px solid blue;
+    color: blue;
+}
+
+
+
+
+
+/* create a anchor part of this click so anchor tag part show  */
+.white{
+    position: absolute;
+    top: 80px;
+    left: 700px;
+    display: none;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 2px 2px 20px lightgrey;
+    width: 330px;
+    height: 350px;
+}
+.white h1{
+    color: #001056;
+    padding-bottom: 20px;
+}
+.white a{
+    /* display: inline-block; */
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: #001056;
+    font-size: 20px;
+}
+.white a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+
+/* create a anchor part with the name of Features */
+.white-div{
+    background-color: white;
+    box-shadow: 2px 2px 20px lightgrey;
+    width: 800px;
+    height: 700px;
+    padding: 70px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 570px;
+}
+.main-white{
+    display: flex;
+}
+.main-white .one h2 a{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.main-white .one h2 a:hover{
+    text-decoration: underline;
+}
+.main-white .one a{
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+    color: #001056;
+    
+}
+.main-white .one a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+.main-white .two{
+    margin-left: 60px;
+}
+.main-white .two h2 a{
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #001056;
+}
+
+.main-white .two h2 a:hover{
+    text-decoration: underline;
+}
+
+.main-white .two a{
+    text-decoration: none;
+    color: #001056;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+.main-white .two a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+.main-white .three{
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+
+.main-white .three a{
+    color: #001056;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+.main-white .three a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+
+
+
+
+/* create a create hover part section */
+.create-white{
+    background-color: white;
+    box-shadow: 2px 2px 20px grey;
+    padding: 40px;
+    width: 1100px;
+    display: none;
+    height: 500px;
+    position: absolute;
+    top: 12%;
+    left: 22%;
+}
+
+.main-div{
+    display: flex;
+}
+.one-part h2 a{
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+.one-part a{
+    color: #001056;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.one-part a:hover{
+    text-decoration: underline;
+}
+
+.two-part{
+    margin-left: 50px;
+}
+.two-part h2 a{
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+.two-part a{
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #001056;
+    display: block;
+}
+.two-part a:hover{
+    text-decoration: underline;
+}
+.three-part{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.three-part a{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #001056;
+    display: block;
+    text-decoration: none;
+}
+.three-part a:hover{
+    text-decoration: underline;
+}
+.four-part{
+    margin-left: 90px;
+    margin-top: 50px;
+}
+.four-part a{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #001056;
+    display: block;
+    text-decoration: none;
+}
+.four-part a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* create a template hover part section */
+.template-div{
+    display: none;
+    position: absolute;
+    top: 13%;
+    left: 7%;
+    width: 1300px;
+    background-color: white;
+    box-shadow: 2px 2px 20px grey;
+    padding: 40px;
+    padding-left: 60px;
+
+}
+
+.main-template{
+    display: flex;
+}
+
+.template-one{
+    margin-right: 60px;
+}
+
+.template-two{
+    margin-right: 60px;
+}
+
+.template-three{
+    margin-right: 60px;
+}
+
+.template-four{
+    margin-right: 60px;
+}
+
+
+
+.template-one h3 a{
+    font-size: 20px;
+    color: #001056;
+}
+
+.template-one a{
+    text-decoration: none;
+    color: #001056;
+    display: block;
+    margin-bottom: 20px;
+}
+.template-one a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+
+.template-two h3 a{
+    font-size: 20px;
+    color: #001056;
+}
+
+.template-two a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #001056;
+    display: block;
+}
+.template-two a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+
+.template-three h3 a{
+    font-size: 20px;
+    color: #001056;
+}
+
+.template-three a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #001056;
+    display: block;
+}
+.template-three a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+
+
+
+.template-four h3 a{
+    font-size: 20px;
+    color: #001056;
+}
+
+.template-four a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #001056;
+    display: block;
+}
+.template-four a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+
+
+
+.template-five h3 a{
+    font-size: 20px;
+    color: #001056;
+}
+
+.template-five a{
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+    color: #001056;
+}
+.template-five a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create a content below button and side video section part */
+.content-side-video{
+    margin-top: 70px;
+    margin-left: 100px;
+    display: flex;
+}
+.content-with-button h2{
+    width: 400px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+@media screen and (max-width:375px) {
+    .content-with-button h2{
+        font-size: 30px;
+        color: #001056;
+        font-weight: 100;
+        text-align: left;
+        width: 280px;
+        position: absolute;
+        top: 15%;
+        left: 30px;
+        line-height: 38px;
+        font-family: serif;
+    }
+}
+
+.content-with-button button{
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: royalblue;
+    color: white;
+    padding: 18px 50px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+@media screen and (max-width:375px){
+    .content-with-button{
+        margin-left: -80px;
+        margin-top: -80px;
+        display: block;
+
+    }
+    .content-with-button button{
+        font-size: 13px;
+        width: 300px;
+    }
+}
+
+
+
+.content-with-button button:hover{
+    box-shadow: 2px 1px 20px grey;
+    background-image: linear-gradient(30deg, royalblue , purple );
+    text-decoration: underline;
+}
+
+.content-video video{
+    width: 640px;
+    margin-top: -50px;
+    margin-left: 100px;
+    box-shadow: 1px -2px 30px lightgrey;
+}
+
+@media screen and (max-width:375px) {
+    .content-video{
+        display: inline-block;
+        margin: auto;
+    }
+    .content-video video{
+        width: 400px;
+        display: inline-block;
+    }
+}
+
+
+
+
+
+/* create a Trusted by 9Plus section part */
+.Trusted{
+    margin-top: 200px;
+    text-align: center;
+}
+.Trusted p{
+    font-size: 18px;
+}
+
+
+
+
+/* createa a side animation running section part */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create a Engage your audience section part */
+.Engage{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 350px;
+}
+.Engage p{
+    width: 650px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #030A41;
+    font-size: 25px;
+}
+
+
+
+
+
+/* Create a animate online section part */
+.animate-online{
+    margin-top: 100px;
+    background-color: #CFE1E2;
+    margin-bottom: 150px;
+    height: 700px;
+}
+.all-animate{
+    padding-top: 200px;
+    display: flex;
+
+}
+.animate-heading h1{
+    font-size: 40px;
+    margin-left: 120px;
+    width: 300px;
+}
+
+.five-number{
+    margin-left: 200px;
+    width: 600px;
+}
+
+.five-number p{
+    margin-bottom: 40px;
+    font-size: 25px;
+    display: inline;
+
+}
+.five-number a{
+    font-size: 25px;
+    text-decoration: none;
+}
+.five-number a:hover{
+    text-decoration: underline;
+}
+.five-number .blue{
+    margin-right: 40px;
+}
+
+.five-number .anchor{
+    text-decoration: none;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.five-number .anchor:hover{
+    text-decoration: underline;
+}
+
+.five-number .anchor1{
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.five-number .anchor1:hover{
+    text-decoration: underline;
+}
+.five-number .blue{
+    background-color: royalblue;
+    border-radius: 50%;
+    color: white;
+    /* display: blo; */
+    padding: 14px 20px;
+}
+
+
+
+
+
+
+/* create a youtube video embad in html section part */
+.embad-video{
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+
+
+
+
+/* create a three content template section part */
+.three-templates{
+    margin-bottom: 140px;
+    margin-left: 40px;
+    display: flex;
+}
+.template{
+
+    height: 320px;
+    margin-left: 50px;
+    background-color: #CFE1E2;
+    width: 350px;
+    padding: 100px 40px;
+}
+.template p{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 240px;
+}
+
+
+
+
+
+
+/* create a Getting Started */
+.Getting-started{
+    width: 990px;
+}
+
+.starting{
+    margin-left: 200px;
+}
+.starting .color{
+    color: blue;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* create a gradient div background and add content and button and right side video image section part */
+.gradient-div{
+    background-image: linear-gradient(217deg, #A8E4E7 -20%, white 40%, #DDB8DD 300%);
+    margin-bottom: 160px;
+    width: 1000px; 
+    height: 460px;
+    margin-top: 200px;   
+    margin-left: 150px;
+    border-top-right-radius: 240px;
+}
+
+.content-with-button-div{
+    display: flex;
+}
+
+.content{
+    padding: 60px 0px 0px 60px;
+}
+
+.content h2{
+    width: 340px;
+    font-size: 40px;
+}
+
+.content p{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    width: 360px;
+}
+.content a{
+    background-image: linear-gradient(to right, royalblue, lightgrey );
+    color: white;
+    font-size: 18px;
+    padding: 20px 60px;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 44px;
+}
+
+.content a:hover{
+    box-shadow: 2px -1px 17px lightgrey;
+    text-decoration: underline;
+}
+
+.video-image video{
+    width: 480px;
+    margin-top: 90px;
+    margin-left: 180px;
+}
+
+
+
+
+
+/* Create a animation online on a shoesstring budget */
+.animation-online{
+    margin-left: 290px;
+    width: 840px;
+}
+
+.animate h2{
+    margin-top: 40px;    
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+.animate p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.animate a{
+    text-decoration: none;
+    color: royalblue;
+}
+
+.animate a:hover{
+    text-decoration: underline;
+}
+
+.made-an-animate .bold{
+    width: 700px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.made-an-animate .before::before{
+    content: "";
+    width: 40px;
+    margin-right: 10px;
+    border: 1px solid royalblue;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.animate .basis{
+    margin-top: 80px;
+    color: royalblue;
+    font-size: 25px;
+}
+
+
+
+.animation .anchor:before{
+    content: "1";
+    color: white;
+    padding: 6px 13px;
+    margin-right: 20px;
+    background-color: royalblue;
+    border-radius: 40px;
+}
+
+.animation .anchor1{
+    margin-top: 20px;
+}
+
+
+
+.animation .anchor1:before{
+    content: "2";
+    padding-top: 50px;
+    color: white;
+    padding: 7px 13px;
+    margin-right: 20px;
+    background-color: royalblue;
+    border-radius: 40px;
+}
+
+.animation .anchor3:before{
+    content: "3";
+    padding-top: 50px;
+    color: white;
+    padding: 7px 13px;
+    margin-right: 20px;
+    background-color: royalblue;
+    border-radius: 40px;
+}
+
+.animation .anchor4:before{
+    content: "4";
+    padding-top: 50px;
+    color: white;
+    padding: 7px 13px;
+    margin-right: 20px;
+    background-color: royalblue;
+    border-radius: 40px;
+}
+
+
+.animation .anchor5:before{
+    content: "5";
+    padding-top: 50px;
+    color: white;
+    padding: 7px 13px;
+    margin-right: 20px;
+    background-color: royalblue;
+    border-radius: 40px;
+}
+
+
+
+
+
+/* create a masterprice div add in section part */
+.master-price{
+    padding: 200px;
+    border-top-left-radius: 220px;
+    background-image: linear-gradient(100deg, #DDB8DD  12%, white 50%);
+    margin-top: 100px;
+    height: 600px;
+    width: 100%;
+}
+
+.master-price h2{
+    width: 920px;
+    font-size: 55px;
+    margin-bottom: 60px;
+}
+
+
+
+.master-price a{
+    background-image: linear-gradient(to right, royalblue, lightgrey );
+    color: white;
+    font-size: 18px;
+    padding: 20px 60px;
+    text-decoration: none;
+    border-radius: 44px;
+    transition: .3s;
+}
+
+.master-price a:hover{
+    text-decoration: underline;
+    box-shadow: -6px -1px 20px grey;
+}
+
+
+
+
+
+
+
+
+/* create a last footer add in section part */
+.last-footer{
+    background-color: #01223D;
+    height: auto;
+    /* margin-bottom: 200px; */
+}
+
+.heading{
+    padding-left: 120px;
+    padding-top: 200px;
+}
+.heading h1{
+    color: white;
+    font-size: 50px;
+}
+
+.uses-of-biteable{
+    padding-left: 120px;
+    padding-top: 100px;
+}
+.uses h2{
+    margin-right: 70px;
+}
+
+.uses-of-biteable{
+    display: flex;
+}
+
+.By-Role{
+    display: flex;
+}
+
+.By-Role a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+/* create a marketing on hover new width insert section part */
+.By-Role .Role1 a[name="marketing"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role a[name="marketing"]:hover::after{
+    width: 53%;
+}
+
+
+
+/* create a sales on hover new width insert section part */
+.By-Role .Role1 a[name="sales"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role a[name="sales"]:hover::after{
+    width: 100%;
+}
+
+
+
+
+.By-Role .Role1{
+    margin-right: 150px;
+}
+
+.By-Role .Role1 h3{
+    margin-bottom: 40px;
+}
+
+.By-Role .role3 h3{
+    margin-bottom: 40px;
+}
+
+.By-Role .Role2{
+    margin-right: 150px;
+}
+
+
+.By-Role .Role2 h3{
+    margin-bottom: 40px;
+}
+
+.By-Role .Role3{
+    margin-top: 60px;
+}
+
+.By-Role a:hover{
+    color: #C0EAE8;
+}
+
+
+/* create a hover add new width insert section part */
+.By-Role .Role2 a[name="marketing"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role a[name="marketing"]:hover::after{
+    width: 52%;
+}
+
+
+
+
+/* create a hover add a new width insert section part */
+.By-Role .Role3 a[name="marketing"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role3 a[name="marketing"]:hover::after{
+    width: 60%;
+}
+
+
+/* create a template on hover section part */
+.By-Role .Role3 a[name="templates"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role3 a[name="templates"]:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+/* Create last and last footer add in this website and this a part of this website  */
+.last-and-last{
+    display: flex;
+    background-color: #01101C;
+    height: 130px;
+    padding: 40px 0px 0px 120px;
+}
+.last-and-last i{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: ease-in-out .3s ;
+}
+
+.last-and-last i:hover{
+    color: #165F69;
+}
+
+.logo{
+    cursor: pointer;
+    margin-left: 600px;
+    margin-top:  -20px;
+}
+
+
+
+
+
+
+
+/* create a template on hover section part */
+.By-Role .Role1 a[name="templates"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role1 a[name="templates"]:hover::after{
+    width: 36%;
+}
+
+
+
+
+/* create a video editor on hover section part */
+.By-Role .Role1 a[name="video editor"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role1 a[name="video editor"]:hover::after{
+    width: 47%;
+}
+
+
+
+
+
+/* create a Role2  on hover add section part */
+.By-Role .Role2 a[name="Advertising video"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role2 a[name="Advertising video"]:hover::after{
+    width: 95%;
+}
+
+
+
+
+
+
+
+/* create a Role3  (Blog) on hover add section part */
+.By-Role .Role3 a[name="Blog"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role3 a[name="Blog"]:hover::after{
+    width: 30%;
+}
+
+
+
+
+
+/* create a Role3  (Product Demo) on hover add section part */
+.By-Role .Role3 a[name="Product Demo"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role3 a[name="Product Demo"]:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+/* create a Role3  (Help) on hover add section part */
+.By-Role .Role3 a[name="Help"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role3 a[name="Help"]:hover::after{
+    width: 80%;
+}
+
+
+
+
+
+/* create a Role3  (Image resizer) on hover add section part */
+.By-Role .Role1 a[name="Image resizer"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role1 a[name="Image resizer"]:hover::after{
+    width: 60%;
+}
+
+
+
+
+/* create a Role3  (convert videot to GIF) on hover add section part */
+.By-Role .Role1 a[name="convert videot to GIF"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role1 a[name="convert videot to GIF"]:hover::after{
+    width: 90%;
+}
+
+
+
+
+
+
+/* create a Role3  (extract audio form video) on hover add section part */
+.By-Role .Role1 a[name="extract audio form video"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 30px;
+}
+
+
+.By-Role .Role1 a[name="extract audio form video"]:hover::after{
+    width: 80%;
+}
+
+
+
+
+
+/* create a Role3  (About) on hover add section part */
+.By-Role .Role2 a[name="about"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 4px;
+}
+
+
+.By-Role .Role2 a[name="about"]:hover::after{
+    width: 75%;
+}
+
+
+
+/* create a Role3  (About) on hover add section part */
+.By-Role .Role2 a[name="Data processing"]::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    background-color: #C0EAE8;
+    left: 0px;
+    width: 0;
+    transition: width .3s;
+    height: 2px;
+    margin-top: 30px;
+}
+
+
+.By-Role .Role2 a[name="Data processing"]:hover::after{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* create a Resources anchor tag add in this website */
+.Resources{ 
+    display: none;
+    position: absolute;
+    /* z-index: 1; */
+    top: 80px;
+    left: 700px;
+    width: 380px;
+    height: 450px;
+    padding: 70px 0px 0px 70px;
+    box-shadow: 2px 2px 20px lightgray;
+}
+
+.Resources h3{
+    margin-bottom: 20px;
+    font-size: 23px;
+    color: #05024F;
+}
+
+.Resources a{
+    text-decoration: none;
+    padding-top: 20px;
+    color: #05024F;
+    /* display: block; */
+    font-size: 20px;
+}
+
+.Resources a:hover{
+    color: royalblue;
+    text-decoration: underline;
+}
+
+
+.Resources i{
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
